@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=EB+Garamond&family=Gloria+Hallelujah&family=Inter:wght@500&family=Merriweather:wght@300&family=Roboto:wght@400;700&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Stardos+Stencil&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="loading-spinner-container">
+        <!-- Loading spinner -->
+        <div id="loading-spinner" class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div id="main-content" class="d-none">
+        <div id="leftside" class="container-fluid">
+            <div class="row h-100">
+                <!-- Profile Tab (Left Side) -->
+                <div id="profileTab" class="col-md-2 bg-dark text-light p-2 py-4 fixed-top">
+                    <h5 class="text-center">My Profile</h5>
+                    <!-- Add your profile content here -->
+                    <img id="profilepic" src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/403391364_1765432323964697_3216079844108062776_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=jJi9iOZ1ayQAX-QxxQH&_nc_ht=scontent.fmnl9-2.fna&oh=03_AdTKYg7wYolRNsz0_3ftbE2Sp7jsYP1KTVadLtBLCps8gg&oe=65AA2BB9" class="rounded-circle py-3 img-fluid">
+                    <h5 id="myname" class="fs-5">Jose Eric A De Jesus</h3>
+                    <div id="mydetails">
+                        <p class="my-0 fs-smaller">Age: 24 Years old</p>
+                        <p class="my-0 fs-smaller">Sex: Male</p>
+                        <p class="my-0 fs-smaller">Civil Status: Single</p>
+                        <p class="my-0 fs-smaller">Height: 5'6ft. </p>
+                        <p class="my-0 fs-smaller">Weight: 60kg. </p>
+                        <p class="my-0 fs-smaller">Date of Birth: Nov.13,1999</p>
+                        <p class="my-0 fs-smaller">Place of Birth: Lucena City</p>
+                        <p class="my-0 fs-smaller">Language: Filipino/English</p>
+                        <p class="my-0 fs-smaller">Nationality: Filipino</p>
+                    </div>
+                </div>
+
+                <!-- Main Content (Right Side) -->
+                <div id="rightside" class="col-md-10 offset-md-2 p-0">
+                    <!-- Navbar -->
+                    <nav id="topnav" class="navbar navbar-expand-lg navbar-expand-md sticky-top">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item navbar-nav-custom">
+                                        <a id="homeLink" class="nav-link text-light fs-5" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item navbar-nav-custom">
+                                        <a class="nav-link text-light fs-5" href="#projects">Projects</a>
+                                    </li>
+                                    <li class="nav-item navbar-nav-custom">
+                                        <a class="nav-link text-light fs-5" href="#tools">Tools</a>
+                                    </li>
+                                    <li class="nav-item navbar-nav-custom">
+                                        <a class="nav-link text-light fs-5" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Navbar end -->
+
+                    <!-- Main Content Goes Here -->
+                    <!-- HomePage/LandingPage -->
+                    <div class="container-fluid mt-4 pb-4 text-center">
+                        <h1 id="landing" class="text-center display-2 mt-1"></h1>
+                        <div id="homebackground" class="card bg-dark col-12">
+                            <div>
+                                <h1 class="text-center display-2 mt-5 text-light">Welcome</h1>
+                                <h1 class="text-center display-2 text-light">and</h1>
+                                <h1 class="text-center display-2 mb-5 text-light">Nice to Meet You</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ProjectPage -->
+                    <div id="projects" class="container pt-1 text-center">
+                        <h1 id="project-text" class="text-center display-4 mt-5">My Projects</h1>
+                        <div class="card bg-dark col-lg-9 col-md-10 col-sm-12 mx-auto">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="https://i.imgur.com/cTDgBet.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <video class="d-block w-100" controls autoplay muted><source src="https://i.imgur.com/4BOrKRY.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.</video>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="https://i.imgur.com/tjGy6mf.jpg" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ToolPage -->
+                    <div id="tools" class="container pt-1 mb-5 text-center">
+                            <h1 id="tool-text" class="text-center display-4 mt-5">My Tools</h1>
+                            <div id="toolbackground" class="card bg-dark col-lg-10 col-md-8 col-sm-10 py-5 px-auto mx-auto">
+                                <div class="row">
+                                    <!-- First Column -->
+                                    <div class="col-lg-2 col-2 col-md-2 mx-auto">
+                                        <!-- First Row -->
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6">
+                                                <img src="https://mongodb-js.github.io/leaf/mongodb-leaf_256x256@2x.png" class="img-fluid" alt="Image 1">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png" class="img-fluid" alt="Image 2">
+                                            </div>
+                                        </div>
+                                        <!-- Second Row -->
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6">
+                                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/express-js-icon.png" class="img-fluid" alt="Image 3">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" class="img-fluid" alt="Image 4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Second Column -->
+                                    <div class="col-lg-2 col-2 col-md-2 mx-auto">
+                                        <!-- First Row -->
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6">
+                                                <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/heroku_logo_icon_168126.png" class="img-fluid mr-4" alt="express logo" class="img-fluid" alt="Image 5">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png" class="img-fluid" alt="Image 6">
+                                            </div>
+                                        </div>
+                                        <!-- Second Row -->
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6">
+                                                <img src="https://www.sublimehq.com/images/sublime_text.png" class="img-fluid" alt="Image 7">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" class="img-fluid" alt="Image 8">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Third Column -->
+                                    <div class="col-lg-2 col-2 col-md-2 mx-auto">
+                                        <!-- First Row -->
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6">
+                                                <img src="https://assets.stickpng.com/images/5847f997cef1014c0b5e48c1.png" class="img-fluid" alt="Image 9">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png" class="img-fluid" alt="Image 10">
+                                            </div>
+                                        </div>
+                                        <!-- Second Row -->
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Jc_logo.png/220px-Jc_logo.png" class="img-fluid" alt="Image 11">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/2048px-Android_Studio_icon_%282023%29.svg.png" class="img-fluid" alt="Image 12">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <hr class="m-5">
+                    <!-- Contact Page -->
+                    <div class="container mt-4 pb-4 d-flex flex-column align-items-center text-center">
+                        <h1 id="contact" class="text-center display-2 mt-1"></h1>
+                        <div class="card col-12 bg-transparent p-5 mb-md-5 mb-sm-5 ">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <h1 id="contact-text" class="display-5">My Contacts</h1>
+                                    <div class="row align-items-center justify-content-center">
+                                        <!-- Facebook Icon -->
+                                        <div class="col-lg-2 col-md-2 col-3">
+                                            <a href="https://www.facebook.com/bbbbbbbbbb1b/" target="_blank" class="custom-link">
+                                                <img src="https://freepngimg.com/thumb/facebook/65281-instagram-icons-phone-computer-facebook-address-whatsapp.png" class="img-fluid" alt="Facebook Icon"> <p class="font-size-responsive">Facebook</p>
+                                            </a>
+                                        </div>
+                                        <!-- LinkedIn Icon -->
+                                        <div class="col-lg-2 col-md-2 col-3">
+                                            <a href="https://www.linkedin.com/in/jose-eric-de-jesus-338a19291" target="_blank" class="custom-link">
+                                                <img src="https://static.vecteezy.com/system/resources/previews/023/986/980/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" class="img-fluid" alt="LinkedIn Icon"> <p class="font-size-responsive">LinkedIn</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 mt-lg-0 mt-md-5 mt-5">
+                                    <h1 id="message-text" class="display-5">Message Me</h1>
+                                    <div class="row mt-4 d-flex justify-content-center">
+                                        <div class="py-3 col-md-9 col-lg-12 bg-transparent">
+                                            <!-- Form Start -->
+                                            <form id="form-col">
+                                                <!-- Name Input -->
+                                                <div class="mb-3">
+                                                    <label for="name" class="text-light">Name</label>
+                                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                                </div>
+                                                <!-- Email Input -->
+                                                <div class="mb-3">
+                                                    <label for="email" class="text-light">Email Address</label>
+                                                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                                                </div>
+                                                <!-- Message Textarea -->
+                                                <div class="mb-3">
+                                                    <label for="message" class="form-label text-light">Message</label>
+                                                    <textarea placeholder="....."class="form-control" id="message" name="message" rows="4" required></textarea>
+                                                </div>
+                                                <!-- Submit Button with Bootstrap Modal Class -->
+                                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalDiv">
+                                                    Submit
+                                                </button>
+                                            </form>
+                                            <!-- Form End -->
+                                        </div>
+                                    </div>
+                                    <!-- Form Container End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer -->
+                    <footer id="footer" class="text-white py-1 text-center">
+                        <div class="mx-2">Jose Eric A De Jesus</div>
+                        <div class="mx-2">Full Stack Web Developer</div>
+                        <div class="mx-2">&copy;2024 My Website. | All rights reserved.</div>
+                    </footer>
+
+                    <!-- Bootstrap Modal Start -->
+                    <div class="modal" tabindex="-1" id="modalDiv">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Thank you for Contacting us!</h5>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Message Succesfully Sent</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bootstrap Modal End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        function toggleFixedTop() {
+            var profileTab = document.getElementById('profileTab');
+            var myname = document.getElementById('myname');
+            var mydetails = document.getElementById('mydetails');
+            var profilepic = document.getElementById('profilepic');
+            if (window.innerWidth >= 767.98) {
+                profileTab.classList.add('fixed-top');
+                myname.classList.remove('text-center');
+                mydetails.classList.remove('text-center');
+                profilepic.style.width = '100%';
+                profilepic.classList.remove('d-block', 'mx-auto');
+            } else {
+                profileTab.classList.remove('fixed-top');
+                myname.classList.add('text-center');
+                mydetails.classList.add('text-center');
+                profilepic.style.width = '50%';
+                profilepic.classList.add('d-block', 'mx-auto');
+            }
+        }
+
+        window.addEventListener('resize', toggleFixedTop);
+
+        // Simulate a delay (e.g., 2000 milliseconds = 2 seconds)
+        setTimeout(function () {
+            // Hide loading spinner
+            document.getElementById('loading-spinner-container').style.display = 'none';
+
+            // Show main content
+            document.getElementById('main-content').classList.remove('d-none');
+
+            // Call the existing function for fixed-top toggle
+            toggleFixedTop();
+        }, 500);
+    </script>
+
+</body>
+</html>

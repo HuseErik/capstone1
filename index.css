@@ -1,0 +1,161 @@
+h1{
+   font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+#project-text, #tool-text, #contact-text, #message-text{
+   font-family: 'EB Garamond', sans-serif;
+}
+#myname, #mydetails{
+   font-family: 'Merriweather', sans-serif;
+}
+#footer{
+   font-family: 'Caveat', sans-serif;
+}
+#form-col{
+   font-family: 'Gloria Hallelujah', sans-serif;
+}
+.col-md-10{
+        background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F1-in-2023--885379607973661019%2F&psig=AOvVaw1URZemLTPIjseh_TmsJzst&ust=1703160421347000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCKi_8ZH9nYMDFQAAAAAdAAAAABAQ');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+h5{
+   font-family: 'Stardos Stencil', sans-serif;
+}
+.navbar-nav-custom {
+        font-family: 'Stardos Stencil', sans-serif;
+    }
+html {
+    scroll-behavior: smooth;
+  }
+@media (max-width: 1280px) {
+            .fs-smaller {
+                font-size: 0.7rem; /* Adjust the size as needed for medium screens */
+            }
+}
+
+@media (max-width: 767.98px) {
+            .fs-smaller {
+                font-size: 1.2rem; /* Adjust the size as needed for small screens */
+            }
+}
+@media (min-width: 1281px) {
+    .fs-smaller {
+        font-size: 0.9rem; /* Adjust the size as needed for large screens */
+    }
+}
+#topnav, #profileTab, #leftside, #homebackground, #footer{
+            background: url('https://bigthink.com/wp-content/uploads/2021/12/ezgif-4-4e46c3553db8.gif?lb=875,492') no-repeat center center fixed; /* Replace with your Google image URL */
+            background-size: cover;
+}
+#rightside{
+            background: url('https://i.ytimg.com/vi/cYEvZaeY2lQ/maxresdefault.jpg') no-repeat center center fixed; /* Replace with your Google image URL */
+            background-size: cover;
+}
+@media (min-width: 992px) {
+    #profileTab.fixed-top-lg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+}
+#toolbackground{
+            background: url('https://i.ytimg.com/vi/R9mXtzn8meE/maxresdefault.jpg') no-repeat center center fixed; /* Replace with your Google image URL */
+            background-size: cover;
+}
+.custom-link {
+        text-decoration: none !important;
+        color: black !important; /* You can use any color you prefer */
+}
+
+.custom-link:hover, .custom-link:active {
+        color: black !important; /* Adjust as needed */
+}
+@media (max-width: 767.98px) {
+    .font-size-responsive {
+        font-size: 14px !important; /* Adjust font size for small screens */
+    }
+}
+
+@media (min-width: 767.99px) and (max-width: 991px) {
+    .font-size-responsive {
+        font-size: 10px !important; /* Adjust font size for medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .font-size-responsive {
+        font-size: 8px !important; /* Adjust font size for large screens */
+    }
+}
+/* Add animation to navigation links */
+#navbarNav .navbar-nav-custom a.nav-link {
+    color: white !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#navbarNav .navbar-nav-custom a.nav-link:hover {
+    color: #E0F4FF !important;
+}
+@media (min-width: 767.98px) {
+    #topnav .navbar-nav-custom .nav-link:hover {
+        transform: scale(1.4); /* Adjust the scale factor as needed */
+    }
+}
+#profilepic {
+    transition: transform 0.3s ease-in-out;
+}
+
+#profilepic:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+#toolbackground img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#toolbackground img:hover {
+    transform: scale(2.1); /* Adjust the scale factor as needed */
+}
+/* Add this style for centering the loading spinner */
+body.loading {
+    overflow: hidden;
+}
+
+#loading-spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(52, 58, 64, 0.9); /* Background color of the spinner container */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+#loading-spinner-wrapper {
+    position: relative;
+}
+
+#loading-spinner {
+    border: 6px solid #ffffff; /* Border color of the spinner */
+    border-top: 6px solid #28a745; /* Color of the spinning part */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
